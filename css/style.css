@@ -93,7 +93,6 @@ body {
 }
 
 .snake {
- background-color: rgb(205, 238, 20);
  background-color: black;
  border: .25vmin solid white;
  border-radius: 12px;

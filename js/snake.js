@@ -2,7 +2,7 @@ import {
  getInputDirection
 } from "./input.js";
 
-export const SNAKE_SPEED = 5;
+export let SNAKE_SPEED = 5;
 const snakeBody = [{
  x: 12,
  y: 12
@@ -11,6 +11,21 @@ let newSegments = 0;
 
 // game point
 let point = 0;
+
+// snake fast speed
+window.addEventListener("keydown", k => {
+ if (k.repeat) return
+ if (k.key === " ") {
+  return SNAKE_SPEED = 20;
+ }
+})
+
+// snake normal speed
+window.addEventListener("keyup", k => {
+ if (k.key === " ") {
+  return SNAKE_SPEED = 5;
+ }
+})
 
 export function update() {
  addSegments();
