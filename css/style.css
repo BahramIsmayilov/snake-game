@@ -1,0 +1,102 @@
+*,
+body {
+ margin: 0;
+ padding: 0;
+}
+
+#container {
+ height: 100vh;
+ width: 100vw;
+}
+
+#point-board {
+ background-color: #f1c7a6;
+ width: 100vw;
+ height: 30vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 25px;
+ font-weight: 600;
+}
+
+#point {
+ margin-left: 10px;
+}
+
+#btn {
+ background-color: coral;
+ color: white;
+ border: 1px solid white;
+ padding: 10px 20px;
+ letter-spacing: 2px;
+ font-size: 20px;
+ margin-top: 10px;
+}
+
+#game-container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: rgb(2, 0, 0);
+ width: 100vw;
+ height: 70vh;
+}
+
+#game-board {
+ background-color: #dbc8c8;
+ width: 100vmin;
+ height: 100vmin;
+ display: grid;
+ grid-template-rows: repeat(23, 1fr);
+ grid-template-columns: repeat(23, 1fr);
+}
+
+@media screen and (min-width:490px) {
+ #game-board {
+  width: 70vmin;
+  height: 70vmin;
+ }
+}
+
+@media screen and (min-width:1000px) {
+ #container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ #point-board {
+  width: 30vw;
+  height: 100vh;
+ }
+
+ #game-container {
+  width: 70vw;
+  height: 100vh;
+ }
+
+ #game-board {
+  width: 100vmin;
+  height: 100vmin;
+ }
+
+ div#game-board {
+  order: 1
+ }
+
+ div#point-board {
+  order: 2
+ }
+}
+
+.snake {
+ background-color: rgb(205, 238, 20);
+ border: .25vmin solid black;
+}
+
+.food {
+ background-color: rgb(238, 115, 217);
+ border: .25vmin solid black;
+
+}
