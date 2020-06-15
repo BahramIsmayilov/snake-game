@@ -16,8 +16,18 @@ body {
  display: flex;
  justify-content: center;
  align-items: center;
- font-size: 25px;
- font-weight: 600;
+ font-size: 17px;
+ font-weight: 500;
+}
+
+#point-board h1 {
+ background-color: coral;
+ color: white;
+ text-align: center;
+ padding: 5px 10px;
+ border: 2px solid white;
+ border-radius: 5px;
+
 }
 
 #point {
@@ -27,13 +37,17 @@ body {
 #btn {
  background-color: coral;
  color: white;
- border: 1px solid white;
+ border: 2px solid white;
  padding: 10px 20px;
  letter-spacing: 2px;
  font-size: 20px;
  margin-top: 15px;
  border-radius: 5px;
  outline: none;
+}
+
+.info {
+ display: none;
 }
 
 #game-container {
@@ -71,6 +85,20 @@ body {
  #point-board {
   width: 30vw;
   height: 100vh;
+ }
+
+ .info {
+  display: block;
+  margin-top: 40px;
+  background-color: coral;
+  color: white;
+  padding: 20px 15px;
+  border: 2px solid white;
+  border-radius: 10px;
+ }
+
+ .info i {
+  margin-left: 10px;
  }
 
  #game-container {

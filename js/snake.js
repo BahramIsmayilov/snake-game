@@ -15,14 +15,14 @@ let point = 0;
 // snake fast speed
 window.addEventListener("keydown", k => {
  if (k.repeat) return
- if (k.key === " ") {
+ if (k.key === "Shift") {
   return SNAKE_SPEED = 20;
  }
 })
 
 // snake normal speed
 window.addEventListener("keyup", k => {
- if (k.key === " ") {
+ if (k.key === "Shift") {
   return SNAKE_SPEED = 5;
  }
 })
