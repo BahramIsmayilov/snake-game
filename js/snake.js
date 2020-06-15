@@ -4,18 +4,9 @@ import {
 
 export const SNAKE_SPEED = 5;
 const snakeBody = [{
-  x: 12,
-  y: 12
- },
- {
-  x: 13,
-  y: 12
- },
- {
-  x: 14,
-  y: 12
- }
-]
+ x: 12,
+ y: 12
+}]
 let newSegments = 0;
 // game point
 let point = 0;
