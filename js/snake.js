@@ -8,6 +8,7 @@ const snakeBody = [{
  y: 12
 }]
 let newSegments = 0;
+
 // game point
 let point = 0;
 

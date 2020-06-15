@@ -55,6 +55,6 @@ function checkDeath() {
 
 // button clicked and new game
 
-document.getElementById("btn"), addEventListener("click", () => {
+document.getElementById("btn").addEventListener("click", () => {
  window.location = "/";
 })
