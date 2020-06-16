@@ -39,38 +39,38 @@ window.addEventListener("keydown", k => {
   }
 })
 
-window.addEventListener("swiped-left", k => {
-  console.log(k.target);
-  if (lastInputDirection.x !== 0) break;
-  inputDirection = {
-    x: -1,
-    y: 0
-  }
-})
-window.addEventListener("swiped-right", k => {
-  console.log(k.target);
-  if (lastInputDirection.x !== 0) break;
-  inputDirection = {
-    x: 1,
-    y: 0
-  }
-})
-window.addEventListener("swiped-up", k => {
-  console.log(k.target);
-  if (lastInputDirection.y !== 0) break;
-  inputDirection = {
-    x: 0,
-    y: -1
-  }
-})
-window.addEventListener("swiped-down", k => {
-  console.log(k.target);
-  if (lastInputDirection.y !== 0) break;
-  inputDirection = {
-    x: 0,
-    y: 1
-  }
-})
+// window.addEventListener("swiped-left", k => {
+//   console.log(k.target);
+//   if (lastInputDirection.x !== 0) break;
+//   inputDirection = {
+//     x: -1,
+//     y: 0
+//   }
+// })
+// window.addEventListener("swiped-right", k => {
+//   console.log(k.target);
+//   if (lastInputDirection.x !== 0) break;
+//   inputDirection = {
+//     x: 1,
+//     y: 0
+//   }
+// })
+// window.addEventListener("swiped-up", k => {
+//   console.log(k.target);
+//   if (lastInputDirection.y !== 0) break;
+//   inputDirection = {
+//     x: 0,
+//     y: -1
+//   }
+// })
+// window.addEventListener("swiped-down", k => {
+//   console.log(k.target);
+//   if (lastInputDirection.y !== 0) break;
+//   inputDirection = {
+//     x: 0,
+//     y: 1
+//   }
+// })
 
 export function getInputDirection() {
   lastInputDirection = inputDirection;
